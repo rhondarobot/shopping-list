@@ -1,114 +1,74 @@
-@media only screen and (max-width: 380px) {
-body {
-   background-image: url('../images/Grocery Bag.png');
+.header {
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
-  background-position: 50% 170px;
-  padding: 0;
-  }
-
-.purchased {
-    text-decoration: line-through;
+  background-position: 50%;
+  flex-flow: row wrap;
 }
 
-header {
-     font-family: Covered By Your Grace;
-     color: #672222;
-     font-size: 1rem;
-     width: 50%;
-     margin-left: 5rem;
-     text-align: center;
- }
+h1 {
+  flex: 0 1 100%;
+  order: 0;
+  color: rgb(146,64,64);
+  font-family: "Shadows Into Light", sans-serif, Arial;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: space-around;
+  background-image: linear-gradient(180deg,rgb(255,255,255) 0%, rgb(203,144,96) 100%);
+}
 
-.form {
-  float: left;
-  font-size: 1.5vh;
-  margin-top: 100px;
-  margin-left: 60px;
- }
+form { 
+  display: flex;
+  flex-flow: row wrap;
+}
+
+form > * {
+  flex: 1 1 50%;
+}
 
 .instructions {
-  position: absolute;
-  font-size: 2vh;
   text-align: center;
-  margin-left: .25rem;
- }  
-
-
-ul {
-  position: absolute;
-  margin-left: 30%;
-  list-style-type: none;
-  font-family: Shadows Into Light Two;
-  color: #672222;
-  font-size: 2vh;
-  font-weight: 500;
-  height: 9em;
-  width: 14em;
-  overflow-y: scroll;
-  padding: 0;
-  margin-top: 10rem;
- }
-
-::-webkit-scrollbar {
-    width: 12px;
-    direction: left;
- }
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
- }
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
- }
-
+  height: 10vh;
+}
 #inputText {
-  position: relative;
-  background-color: #FDDB33;
-    width: 18em;
-    font-size: .7rem;
-    padding: 0;
-    margin-top: 15%;
- }
-
+   background-color: rgb(255,244,152);
+   text-align: center;
+   width: 100%;
+   height: 80%;
+   flex: 1 1 50%;
+   order: 2;
+}
 #add {
-  background-color: #55e58a; 
-  position: absolute;
-  font-size: .6rem;
-  padding: 2px;
-  margin-top: .2rem;
-  margin-left: 4rem;
- }
-
-#removeAll {
-  background-color: #FF6B6B;
-    width: 2.7rem;
-    position: relative;
-    padding: 2px;
-    font-size: .6rem;
-    margin-top: .2rem;
-    margin-left: 5.8rem;
- }
-
-
-
-
+  background-color:rgb(95,221,198);
+  color: white;
+  width: 95%;
+  margin-left: 5%;
 
 }
 
+#removeAll {
+  width: 100%;
+  background-color: rgb(242,94,139);
+} 
 
+ul {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  align-content: space-around;
+  order: 2;
+  overflow-x: scroll;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+li {
+  flex: 1 1 25%;
+  color: rgb(146,64,64);
+  font-family: "Shadows Into Light", sans-serif, Arial;
+  font-size: 25px;
+}
 
